@@ -89,3 +89,44 @@ footer {
 footer p {
     font-size: 1em;
 }
+#anterior, #proximo{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    background-color: darkcyan;
+    border: 1px solid #eee9;
+    color: #eee;
+    font-size: x-large;
+    font-family: monospace;
+    cursor: pointer;
+    z-index: 4;
+    border-radius: 50%;
+}
+
+#anterior{
+    left: 30px;
+}
+
+#proximo{
+    right: 30px;
+}
+
+@keyframes mexer {
+    from {
+        top: 100%;
+        opacity: 0;
+    }
+}
+
+    .item.ativo img.tchau{
+        animation: mexer 0.5s ease-in-out 1;
+    }
+
+    .item .tchau{
+        width: 20%;
+        position: center;
+        top: 0;
+        z-index: 3;
+    }
